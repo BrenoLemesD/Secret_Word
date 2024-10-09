@@ -1,1 +1,80 @@
-    
+.game h1 {
+  font-size: 3em;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.points span {
+  font-weight: bold;
+  color: #4caf50; /* Cor verde para representar pontos */
+  font-size: 1.5em;
+}
+
+.tip span {
+  color: #ff9800; /* Amarelo laranja para destaque */
+  font-size: 1.2em;
+}
+
+.wordContainer {
+  margin: 1.5em auto;
+  padding: 1.5em;
+  border: 10px solid #ff9800;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-around;
+  background-color: #f9f9f9;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.letter,
+.blankSquare {
+  font-size: 70px;
+  line-height: 1.5;
+  border: 3px solid #333;
+  height: 100px;
+  width: 100px;
+  text-transform: uppercase;
+  background-color: #fff;
+  color: #333;
+  font-weight: bold;
+  border-radius: 10px;
+  transition: all 0.3s ease; /* Transição suave */
+}
+
+.letter:hover,
+.blankSquare:hover {
+  background-color: #ff9800; /* Efeito de hover */
+  color: #fff;
+  cursor: pointer;
+}
+
+.letterContainer p {
+  margin-bottom: 1.2em;
+  font-size: 1.2em;
+  color: white;
+}
+
+.letterContainer form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.letterContainer input {
+  height: 50px;
+  width: 50px;
+  font-size: 2em;
+  text-align: center;
+  margin-right: 1em;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve */
+  transition: border 0.3s ease;
+}
+
+.letterContainer input:focus {
+  border-color: #ff9800;
+  outline: none;
+}
